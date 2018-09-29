@@ -70,6 +70,9 @@ class ViewController: UIViewController {
       
       if correctAnswer == pickedAnswer {
         score += 1
+        ProgressHUD.showSuccess("Correct!")
+      } else {
+        ProgressHUD.showError("Wrong.")
       }
       
       updateUI()
